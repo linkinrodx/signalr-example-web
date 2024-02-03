@@ -1,0 +1,17 @@
+<h1>Hello World</h1>
+<hr>
+
+<h2>SignalR Example</h2>
+
+<div style="border: 1px solid; min-height: 300px; max-width: 700px;">
+    <div style="border: 1px solid; height: 250px; margin: 5px;">
+        <div *ngFor="let item of listMessage">
+            <span>{{item.message}}</span>
+        </div>
+    </div>
+    
+    <div style="height: 30px; margin: 5px; display: flex; justify-content: space-between;">
+        <input type="text" [(ngModel)]="newMessage" style="width: 70%;">
+        <button (click)="addMessage()" style="width: 28%;">Sent</button>
+    </div>
+</div>
