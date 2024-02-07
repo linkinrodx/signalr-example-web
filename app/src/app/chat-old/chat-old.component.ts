@@ -1,15 +1,15 @@
 import { CommonModule } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 @Component({
-  selector: 'app-home',
+  selector: 'app-chat-old',
   standalone: true,
   imports: [CommonModule, FormsModule],
-  templateUrl: './home.component.html',
-  styleUrl: './home.component.scss'
+  templateUrl: './chat-old.component.html',
+  styleUrl: './chat-old.component.scss'
 })
-export class HomeComponent {
+export class ChatOldComponent {
   listMessage : any[] = [];
   newMessage: string = "";
 
@@ -37,3 +37,4 @@ export class HomeComponent {
     this.newMessage = "";
   }
 }
+
